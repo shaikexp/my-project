@@ -11,8 +11,10 @@ public class DataService {
         
         return externalService.getData();
     }
-
-    public static String staticMethod() {
-        return "Static method result";
+    
+	public String fetchStaticData() {
+        
+        return ExternalServiceUtil.staticMethod();
     }
+
 }
